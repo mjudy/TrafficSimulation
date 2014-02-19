@@ -21,6 +21,13 @@ public class TrafficSim
     private LinkedList results;
     private IntersectionFlowRate flowRate;
 
+
+    /**
+     * Constructor for the TrafficSim class. Initializes traffic queues, results linked list and IntersectionFlowRate
+     * class. Also reads the input file and prints the initial board state before starting the traffic simulation.
+     *
+     * @param filename
+     */
     public TrafficSim (String filename)
     {
         northbound = new LinkedList<Vehicle>();
@@ -74,6 +81,8 @@ public class TrafficSim
                         break;
                 }
             }
+
+            scan.close();
         }
         catch (FileNotFoundException e)
         {
