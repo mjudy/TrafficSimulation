@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3990bfb8-3f11-4779-b118-b1e51c1241bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/LinkedList.java" afterPath="$PROJECT_DIR$/src/Project1/LinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/TrafficSim.java" afterPath="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -12,7 +11,7 @@
     <file path="/TrafficSim.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392924236285" ignored="false" />
     <file path="/Driver.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392792139738" ignored="false" />
     <file path="/Vehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392861203010" ignored="false" />
-    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392924622444" ignored="false" />
+    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392927474604" ignored="false" />
     <file path="/ResultVehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392870201636" ignored="false" />
     <file path="/LinkedList.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392927447663" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -84,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrafficSim.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TrafficSim.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="278" column="0" selection-start="10099" selection-end="10099" vertical-scroll-proportion="0.0">
+            <state line="282" column="25" selection-start="10254" selection-end="10254" vertical-scroll-proportion="3.9075391">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -122,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedList.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LinkedList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project1/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="68" selection-start="2639" selection-end="2639" vertical-scroll-proportion="0.5405405">
+            <state line="124" column="103" selection-start="2803" selection-end="2803" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -163,8 +162,8 @@
         <option value="$PROJECT_DIR$/src/Project1/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/Project1/ResultVehicle.java" />
         <option value="$PROJECT_DIR$/src/driver/Driver.java" />
-        <option value="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
         <option value="$PROJECT_DIR$/src/Project1/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
       </list>
     </option>
   </component>
@@ -397,7 +396,11 @@
       <created>1392924623994</created>
       <updated>1392924623994</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Moar comments. 'Cause we all love documentation, right?">
+      <created>1392927482906</created>
+      <updated>1392927482906</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -418,7 +421,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6925996" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30740038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30740038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -468,7 +471,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed the off by one. TODO: Format printBoard and results." />
+    <option name="LAST_COMMIT_MESSAGE" value="Moar comments. 'Cause we all love documentation, right?" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -488,6 +491,7 @@
     <MESSAGE value="Changed santa's pants." />
     <MESSAGE value="Off by one in the final loop. Ugh." />
     <MESSAGE value="Fixed the off by one. TODO: Format printBoard and results." />
+    <MESSAGE value="Moar comments. 'Cause we all love documentation, right?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -576,15 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="278" column="0" selection-start="10099" selection-end="10099" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input2.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -608,8 +603,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="68" selection-start="2639" selection-end="2639" vertical-scroll-proportion="0.5405405">
+        <state line="124" column="103" selection-start="2803" selection-end="2803" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="282" column="25" selection-start="10254" selection-end="10254" vertical-scroll-proportion="3.9075391">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

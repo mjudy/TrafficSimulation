@@ -38,7 +38,6 @@ public class TrafficSim
         flowRate = new IntersectionFlowRate();
 
         readFromFile(filename);
-        printBoard();
         simulation();
 
         System.out.println(results.toString());
@@ -152,6 +151,12 @@ public class TrafficSim
         //increment time counters for starting vehicles
         time++;
         priorityTime++;
+        printBoard();
+        String str;
+        if (santa)
+            str = "N/S Light Green. Time: " + time;
+        else
+            str = "E/W Light Green, Time: " + time;
 
         while (time <= 120)
         {
@@ -276,7 +281,6 @@ public class TrafficSim
             }
 
             printBoard();
-            String str;
             if (santa)
                 str = "N/S Light Green. Time: " + time;
             else
