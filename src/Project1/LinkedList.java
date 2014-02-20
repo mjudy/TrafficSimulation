@@ -6,7 +6,7 @@ package Project1;
  *          Date: 2/13/14
  *          Time: 5:37 PM
  */
-public class LinkedList
+public class LinkedList<E>
 {
     private Node head;
     private int count;
@@ -25,7 +25,7 @@ public class LinkedList
      *
      * @param data - Object of any type to be added to the linked list.
      */
-    public void add (ResultVehicle data)
+    public void add (E data)
     {
         Node temp = new Node(data);
         Node current = head;
@@ -45,7 +45,7 @@ public class LinkedList
      * @param data - Object of any type to be added to the linked list.
      * @param index - integer specifying where in the list to add the object.
      */
-    public void add (ResultVehicle data, int index)
+    public void add (E data, int index)
     {
         Node temp = new Node(data);
         Node current = head;
@@ -66,7 +66,7 @@ public class LinkedList
      * @param index - integer specifying what object in the list to get the data from.
      * @return - returns
      */
-    public ResultVehicle get (int index)
+    public E get (int index)
     {
         if(index <= 0)
         {
@@ -120,7 +120,7 @@ public class LinkedList
         String str = "";
         while (current != null)
         {
-            str += "[" + current.getData().toString() + "]";
+            str += "[" + current.getData().toString() + "]\n";
             current = current.getNext();
         }
         return str;
@@ -129,26 +129,26 @@ public class LinkedList
     private class Node
     {
         Node next;
-        ResultVehicle data;
+        E data;
 
-        public Node (ResultVehicle newData)
+        public Node (E newData)
         {
             next = null;
             data = newData;
         }
 
-        public Node (ResultVehicle newData, Node nextNode)
+        public Node (E newData, Node nextNode)
         {
             next = nextNode;
             data = newData;
         }
 
-        public ResultVehicle getData ()
+        public E getData ()
         {
             return data;
         }
 
-        public void setData (ResultVehicle newData)
+        public void setData (E newData)
         {
             data = newData;
         }

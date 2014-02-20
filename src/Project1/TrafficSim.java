@@ -18,7 +18,7 @@ public class TrafficSim
     private Queue<Vehicle> southbound;
     private Queue<Vehicle> westbound;
     private Queue<Vehicle> eastbound;
-    private Project1.LinkedList results;
+    private Project1.LinkedList<ResultVehicle> results;
     private IntersectionFlowRate flowRate;
 
 
@@ -34,17 +34,14 @@ public class TrafficSim
         southbound = new LinkedList<Vehicle>();
         westbound = new LinkedList<Vehicle>();
         eastbound = new LinkedList<Vehicle>();
-        results = new Project1.LinkedList();
+        results = new Project1.LinkedList<ResultVehicle>();
         flowRate = new IntersectionFlowRate();
 
         readFromFile(filename);
         printBoard();
         simulation();
 
-        /*for (int i = 0; i < results.size(); i++)
-        {
-            System.out.println(results.get(i).toString());
-        }*/
+        System.out.println(results.toString());
     }
 
     /**
@@ -109,22 +106,22 @@ public class TrafficSim
      */
     private void printBoard()
     {
-        System.out.println("Northbound: \n");
+        System.out.println("Northbound:");
         for(Vehicle x : northbound)
         {
             System.out.println(x.toString());
         }
-        System.out.println("Southbound: \n");
+        System.out.println("Southbound:");
         for (Vehicle x : southbound)
         {
             System.out.println(x.toString());
         }
-        System.out.println("Eastbound: \n");
+        System.out.println("Eastbound:");
         for (Vehicle x : eastbound)
         {
             System.out.println(x.toString());
         }
-        System.out.println("Westbound: \n");
+        System.out.println("Westbound:");
         for (Vehicle x : westbound)
         {
             System.out.println(x.toString());
@@ -152,9 +149,11 @@ public class TrafficSim
             westbound.add(new Vehicle ('c', time));
         }
 
+        //increment time counters for starting vehicles
         time++;
+        priorityTime++;
 
-        while(time <= 120)
+        while (time <= 120)
         {
             //add cars and trucks to their queues based on their flow rate
             if((time % flowRate.getNorthFlowRateCars()) == 0)
@@ -190,6 +189,7 @@ public class TrafficSim
                     if (truckWait1)
                     {
                         results.add(new ResultVehicle(northbound.peek().getType(), northbound.peek().getTimeEntered(), time));
+                        truckWait1 = false;
                         northbound.remove();
                     }
                 }
@@ -208,6 +208,7 @@ public class TrafficSim
                     if (truckWait2)
                     {
                         results.add(new ResultVehicle(southbound.peek().getType(), southbound.peek().getTimeEntered(), time));
+                        truckWait2 = false;
                         southbound.remove();
                     }
                 }
@@ -229,6 +230,7 @@ public class TrafficSim
                     if (truckWait1)
                     {
                         results.add(new ResultVehicle(eastbound.peek().getType(), eastbound.peek().getTimeEntered(), time));
+                        truckWait1 = false;
                         eastbound.remove();
                     }
                 }
@@ -247,31 +249,39 @@ public class TrafficSim
                     if (truckWait2)
                     {
                         results.add(new ResultVehicle(westbound.peek().getType(), westbound.peek().getTimeEntered(), time));
+                        truckWait2 = false;
                         westbound.remove();
                     }
                 }
             }
 
-            if(santa && priorityTime > 30 && (westbound.size() > 0 || eastbound.size() > 0))
+            if(santa && priorityTime >= 30 && (westbound.size() > 0 || eastbound.size() > 0))
             {
                 santa = false;
                 priorityTime = 0;
             }
-            else if(!santa && priorityTime > 10 && (northbound.size() > 0 || southbound.size() > 0))
+            else if(!santa && priorityTime > 10 && (eastbound.size() ==  0 && southbound.size() == 0))
             {
                 santa = true;
                 priorityTime = 0;
             }
-            else if(!santa && priorityTime > 30)
+            else if(!santa && priorityTime >= 30)
             {
                 santa = true;
                 priorityTime = 0;
             }
 
             printBoard();
+            String str = " ";
+            if (santa)
+                str = "N/S Light Green. Time: " + time;
+            else
+                str = "E/W Light Green, Time: " + time;
+            System.out.println(str + "\n\n");
             time++;
             priorityTime++;
         }
+        printBoard();
     }
 
     /**

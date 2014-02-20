@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3990bfb8-3f11-4779-b118-b1e51c1241bf" name="Default" comment="Changed santa's pants.">
+    <list default="true" id="3990bfb8-3f11-4779-b118-b1e51c1241bf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/LinkedList.java" afterPath="$PROJECT_DIR$/src/Project1/LinkedList.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/TrafficSim.java" afterPath="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrafficSimulation.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/fragment.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392790630690" ignored="false" />
-    <file path="/TrafficSim.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392870946541" ignored="false" />
+    <file path="/TrafficSim.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392872894888" ignored="false" />
     <file path="/Driver.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392792139738" ignored="false" />
     <file path="/Vehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392861203010" ignored="false" />
-    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392870983092" ignored="false" />
+    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392871003719" ignored="false" />
     <file path="/ResultVehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392870201636" ignored="false" />
-    <file path="/LinkedList.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392869210471" ignored="false" />
+    <file path="/LinkedList.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392871811390" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,7 @@
       <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/driver/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+            <state line="12" column="45" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -86,10 +87,19 @@
       <file leaf-file-name="TrafficSim.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="158" column="74" selection-start="4785" selection-end="4785" vertical-scroll-proportion="0.4864865">
+            <state line="278" column="104" selection-start="9911" selection-end="9911" vertical-scroll-proportion="0.22617353">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="input2.txt" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/input2.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,7 +125,7 @@
       <file leaf-file-name="LinkedList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project1/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="116" column="73" selection-start="2629" selection-end="2629" vertical-scroll-proportion="0.0">
+            <state line="122" column="60" selection-start="2769" selection-end="2769" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -150,10 +160,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/Project1/IntersectionFlowRate.java" />
-        <option value="$PROJECT_DIR$/src/driver/Driver.java" />
         <option value="$PROJECT_DIR$/src/Project1/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/Project1/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/Project1/ResultVehicle.java" />
+        <option value="$PROJECT_DIR$/src/Project1/LinkedList.java" />
+        <option value="$PROJECT_DIR$/src/driver/Driver.java" />
         <option value="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
       </list>
     </option>
@@ -371,7 +381,11 @@
       <created>1392870307463</created>
       <updated>1392870307463</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Changed santa's pants.">
+      <created>1392871007296</created>
+      <updated>1392871007296</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -442,7 +456,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Progress! We got vehicles out of queues and SANTA HAS PANTS!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed santa's pants." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -459,6 +473,7 @@
     <MESSAGE value="Added a comment and closed the Scanner. Test commit from IntelliJ." />
     <MESSAGE value="Javadoc comments and a few TODOs added." />
     <MESSAGE value="Progress! We got vehicles out of queues and SANTA HAS PANTS!" />
+    <MESSAGE value="Changed santa's pants." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -526,23 +541,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/Driver.java">
+    <entry file="file://$PROJECT_DIR$/input2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="116" column="73" selection-start="2629" selection-end="2629" vertical-scroll-proportion="0.0">
+        <state line="122" column="60" selection-start="2769" selection-end="2769" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="45" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="158" column="74" selection-start="4785" selection-end="4785" vertical-scroll-proportion="0.4864865">
+        <state line="278" column="104" selection-start="9911" selection-end="9911" vertical-scroll-proportion="0.22617353">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
