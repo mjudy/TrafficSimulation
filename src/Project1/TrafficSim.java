@@ -276,7 +276,7 @@ public class TrafficSim
             }
 
             printBoard();
-            String str = " ";
+            String str;
             if (santa)
                 str = "N/S Light Green. Time: " + time;
             else

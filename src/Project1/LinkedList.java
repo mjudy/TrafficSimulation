@@ -109,6 +109,11 @@ public class LinkedList<E>
         return true;
     }
 
+    /**
+     * Returns the current size of the list.
+     *
+     * @return - an integer describing the current size of the list.
+     */
     public int size()
     {
         return count;

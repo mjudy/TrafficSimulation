@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3990bfb8-3f11-4779-b118-b1e51c1241bf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/LinkedList.java" afterPath="$PROJECT_DIR$/src/Project1/LinkedList.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/TrafficSim.java" afterPath="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrafficSimulation.iws" />
@@ -10,9 +12,9 @@
     <file path="/TrafficSim.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392924236285" ignored="false" />
     <file path="/Driver.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392792139738" ignored="false" />
     <file path="/Vehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392861203010" ignored="false" />
-    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392924612805" ignored="false" />
+    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392924622444" ignored="false" />
     <file path="/ResultVehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392870201636" ignored="false" />
-    <file path="/LinkedList.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392871811390" ignored="false" />
+    <file path="/LinkedList.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392927447663" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,10 +84,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrafficSim.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TrafficSim.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="86" selection-start="4527" selection-end="4527" vertical-scroll-proportion="0.34708393">
+            <state line="278" column="0" selection-start="10099" selection-end="10099" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkedList.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LinkedList.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project1/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="60" selection-start="2769" selection-end="2769" vertical-scroll-proportion="0.0">
+            <state line="114" column="68" selection-start="2639" selection-end="2639" vertical-scroll-proportion="0.5405405">
               <folding />
             </state>
           </provider>
@@ -160,9 +162,9 @@
         <option value="$PROJECT_DIR$/src/Project1/IntersectionFlowRate.java" />
         <option value="$PROJECT_DIR$/src/Project1/Vehicle.java" />
         <option value="$PROJECT_DIR$/src/Project1/ResultVehicle.java" />
-        <option value="$PROJECT_DIR$/src/Project1/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/driver/Driver.java" />
         <option value="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
+        <option value="$PROJECT_DIR$/src/Project1/LinkedList.java" />
       </list>
     </option>
   </component>
@@ -391,7 +393,11 @@
       <created>1392924617827</created>
       <updated>1392924617827</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Fixed the off by one. TODO: Format printBoard and results.">
+      <created>1392924623994</created>
+      <updated>1392924623994</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -563,6 +569,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="45" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="278" column="0" selection-start="10099" selection-end="10099" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/Vehicle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="27" selection-start="1461" selection-end="1480" vertical-scroll-proportion="0.0">
@@ -577,33 +606,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/input2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="60" selection-start="2769" selection-end="2769" vertical-scroll-proportion="0.0">
+        <state line="114" column="68" selection-start="2639" selection-end="2639" vertical-scroll-proportion="0.5405405">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="45" selection-start="229" selection-end="229" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="86" selection-start="4527" selection-end="4527" vertical-scroll-proportion="0.34708393">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
