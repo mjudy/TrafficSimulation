@@ -11,38 +11,72 @@ public class Vehicle
     private char type;
     private int timeEntered;
 
+    /**
+     * Default constructor for Vehicle class. Initializes type and timeEntered to default values.
+     */
     public Vehicle()
     {
         type ='z';
         timeEntered = -1;
     }
 
+    /**
+     * Constructor that initializes type to newType and timeEntered to time.
+     *
+     * @param newType - Defines the type of Vehicle to be created.
+     * @param time - Defines the time that the Vehicle entered the intersection.
+     */
     public Vehicle (char newType, int time)
     {
         type = newType;
         timeEntered = time;
     }
 
+    /**
+     * Retrieves the type of Vehicle object this is. 'c' for car, 't' for truck.
+     *
+     * @return - returns a character representing the vehicle type.
+     */
     public char getType()
     {
         return type;
     }
 
+    /**
+     * Changes the type of Vehicle object this is.
+     *
+     * @param type - a new type to be specified for this Vehicle.
+     */
     public void setType(char type)
     {
         this.type = type;
     }
 
+    /**
+     * Retrieves the time that this Vehicle entered the intersection in the traffic simulation.
+     *
+     * @return - an integer that specifies the time the Vehicle entered the intersection.
+     */
     public int getTimeEntered()
     {
         return timeEntered;
     }
 
+    /**
+     * Changes the time that this Vehicle entered the intersection.
+     *
+     * @param timeEntered - integer specifying a new entry time for the Vehicle.
+     */
     public void setTimeEntered(int timeEntered)
     {
         this.timeEntered = timeEntered;
     }
 
+    /**
+     * Prepares the data contained in this Vehicle object for printing by creating a string containing the data.
+     *
+     * @return - string containing this Vehicle object's data.
+     */
     public String toString()
     {
         String str = "Type: " + type + " Time: " + timeEntered;

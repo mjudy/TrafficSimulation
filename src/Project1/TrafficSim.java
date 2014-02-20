@@ -26,7 +26,7 @@ public class TrafficSim
      * Constructor for the TrafficSim class. Initializes traffic queues, results linked list and IntersectionFlowRate
      * class. Also reads the input file and prints the initial board state before starting the traffic simulation.
      *
-     * @param filename
+     * @param filename - name of file to be read by readFromFile(filename).
      */
     public TrafficSim (String filename)
     {
@@ -42,12 +42,19 @@ public class TrafficSim
         simulation();
     }
 
+    /**
+     * Reads the input data from a file specified by the filename parameter then sets the
+     * flow rate for cars and trucks in each direction.
+     *
+     * @param filename - name of file to be read
+     * @return - Returns false is file read fails. Returns true on success.
+     */
     private boolean readFromFile(String filename)
     {
-        char type = 'z';
-        String temp = "";
-        int carRate = 0;
-        int truckRate = 0;
+        char type;
+        String temp;
+        int carRate;
+        int truckRate;
 
         File file = new File(filename);
 
@@ -81,7 +88,7 @@ public class TrafficSim
                         break;
                 }
             }
-
+            //close the file
             scan.close();
         }
         catch (FileNotFoundException e)
@@ -89,10 +96,12 @@ public class TrafficSim
             e.printStackTrace();
             return false;
         }
-
         return true;
     }
 
+    /**
+     * Prints the state of the intersection during the traffic simulation.
+     */
     private void printBoard()
     {
         System.out.println("Northbound: \n");
@@ -117,6 +126,10 @@ public class TrafficSim
         }
     }
 
+    /**
+     * //TODO Add moar comments.
+     * Runs the traffic simulation.
+     */
     private void simulation()
     {
         int time = 0;
@@ -133,6 +146,8 @@ public class TrafficSim
 
         while(time <= 120)
         {
+            //add cars and trucks to their queues based on their flow rate
+            //TODO Fix entry times so vehicles start entering at second 1.
             if((time % flowRate.getNorthFlowRateCars()) == 0)
                 addVehicle('N', new Vehicle('c', time));
             if((time % flowRate.getNorthFlowRateTrucks()) == 0)
@@ -155,13 +170,19 @@ public class TrafficSim
         }
     }
 
+    /**
+     * Adds vehicles to their designated lanes during the traffic simulation.
+     *
+     * @param direction - defines which queue to add a vehicle to
+     * @param x - a Vehicle object to add to its designated queue
+     * @return - Returns false if an improper direction was specified. Returns true when vehicle addition successful.
+     */
     private boolean addVehicle(char direction, Vehicle x)
     {
         switch (direction)
         {
             case 'N':
                 northbound.add(x);
-                System.out.print("");
                 break;
             case 'S':
                 southbound.add(x);
@@ -172,6 +193,8 @@ public class TrafficSim
             case 'W':
                 westbound.add(x);
                 break;
+            default:
+                return false;
         }
         return true;
     }

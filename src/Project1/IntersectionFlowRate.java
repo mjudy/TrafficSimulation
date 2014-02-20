@@ -32,7 +32,7 @@ public class IntersectionFlowRate
 
     public void setEastFlowRateCars(int eastFlowRateCars)
     {
-        this.eastFlowRateCars = eastFlowRateCars;
+        this.eastFlowRateCars = 60 / eastFlowRateCars;
     }
 
     public int getWestFlowRateCars()
@@ -42,7 +42,7 @@ public class IntersectionFlowRate
 
     public void setWestFlowRateCars(int westFlowRateCars)
     {
-        this.westFlowRateCars = westFlowRateCars;
+        this.westFlowRateCars = 60 / westFlowRateCars;
     }
 
     public int getNorthFlowRateCars()
@@ -52,7 +52,7 @@ public class IntersectionFlowRate
 
     public void setNorthFlowRateCars(int northFlowRateCars)
     {
-        this.northFlowRateCars = northFlowRateCars;
+        this.northFlowRateCars = 60 / northFlowRateCars;
     }
 
     public int getSouthFlowRateCars()
@@ -62,7 +62,7 @@ public class IntersectionFlowRate
 
     public void setSouthFlowRateCars(int southFlowRateCars)
     {
-        this.southFlowRateCars = southFlowRateCars;
+        this.southFlowRateCars = 60 / southFlowRateCars;
     }
 
     public int getEastFlowRateTrucks()
@@ -72,7 +72,7 @@ public class IntersectionFlowRate
 
     public void setEastFlowRateTrucks(int eastFlowRateTrucks)
     {
-        this.eastFlowRateTrucks = eastFlowRateTrucks;
+        this.eastFlowRateTrucks = 60 /  eastFlowRateTrucks;
     }
 
     public int getWestFlowRateTrucks()
@@ -82,7 +82,7 @@ public class IntersectionFlowRate
 
     public void setWestFlowRateTrucks(int westFlowRateTrucks)
     {
-        this.westFlowRateTrucks = westFlowRateTrucks;
+        this.westFlowRateTrucks = 60 / westFlowRateTrucks;
     }
 
     public int getNorthFlowRateTrucks()
@@ -92,7 +92,7 @@ public class IntersectionFlowRate
 
     public void setNorthFlowRateTrucks(int northFlowRateTrucks)
     {
-        this.northFlowRateTrucks = northFlowRateTrucks;
+        this.northFlowRateTrucks = 60 / northFlowRateTrucks;
     }
 
     public int getSouthFlowRateTrucks()
@@ -102,6 +102,6 @@ public class IntersectionFlowRate
 
     public void setSouthFlowRateTrucks(int southFlowRateTrucks)
     {
-        this.southFlowRateTrucks = southFlowRateTrucks;
+        this.southFlowRateTrucks = 60 / southFlowRateTrucks;
     }
 }
