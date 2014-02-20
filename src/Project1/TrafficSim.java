@@ -41,6 +41,10 @@ public class TrafficSim
         printBoard();
         simulation();
 
+        /*for (int i = 0; i < results.size(); i++)
+        {
+            System.out.println(results.get(i).toString());
+        }*/
     }
 
     /**
@@ -134,6 +138,7 @@ public class TrafficSim
     private void simulation()
     {
         int time = 0;
+        int priorityTime = 0;
         boolean santa = true; //traffic light. true means that cars can travel northbound to visit santa.
         boolean truckWait1 = false;
         boolean truckWait2 = false;
@@ -152,7 +157,6 @@ public class TrafficSim
         while(time <= 120)
         {
             //add cars and trucks to their queues based on their flow rate
-            //TODO CHANGE SANTA'S PANTS
             if((time % flowRate.getNorthFlowRateCars()) == 0)
                 addVehicle('N', new Vehicle('c', time));
             if((time % flowRate.getNorthFlowRateTrucks()) == 0)
@@ -247,8 +251,26 @@ public class TrafficSim
                     }
                 }
             }
+
+            if(santa && priorityTime > 30 && (westbound.size() > 0 || eastbound.size() > 0))
+            {
+                santa = false;
+                priorityTime = 0;
+            }
+            else if(!santa && priorityTime > 10 && (northbound.size() > 0 || southbound.size() > 0))
+            {
+                santa = true;
+                priorityTime = 0;
+            }
+            else if(!santa && priorityTime > 30)
+            {
+                santa = true;
+                priorityTime = 0;
+            }
+
             printBoard();
             time++;
+            priorityTime++;
         }
     }
 
