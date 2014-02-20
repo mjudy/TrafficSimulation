@@ -18,7 +18,7 @@ public class TrafficSim
     private Queue<Vehicle> southbound;
     private Queue<Vehicle> westbound;
     private Queue<Vehicle> eastbound;
-    private LinkedList results;
+    private Project1.LinkedList results;
     private IntersectionFlowRate flowRate;
 
 
@@ -34,12 +34,13 @@ public class TrafficSim
         southbound = new LinkedList<Vehicle>();
         westbound = new LinkedList<Vehicle>();
         eastbound = new LinkedList<Vehicle>();
-        results = new LinkedList();
+        results = new Project1.LinkedList();
         flowRate = new IntersectionFlowRate();
 
         readFromFile(filename);
         printBoard();
         simulation();
+
     }
 
     /**
@@ -133,7 +134,11 @@ public class TrafficSim
     private void simulation()
     {
         int time = 0;
+        boolean santa = true; //traffic light. true means that cars can travel northbound to visit santa.
+        boolean truckWait1 = false;
+        boolean truckWait2 = false;
 
+        //initialize intersection with 2 cars in each direction
         for(int i = 0; i < 2; i++)
         {
             northbound.add(new Vehicle ('c', time));
@@ -147,7 +152,7 @@ public class TrafficSim
         while(time <= 120)
         {
             //add cars and trucks to their queues based on their flow rate
-            //TODO Fix entry times so vehicles start entering at second 1.
+            //TODO CHANGE SANTA'S PANTS
             if((time % flowRate.getNorthFlowRateCars()) == 0)
                 addVehicle('N', new Vehicle('c', time));
             if((time % flowRate.getNorthFlowRateTrucks()) == 0)
@@ -165,6 +170,83 @@ public class TrafficSim
             if((time % flowRate.getWestFlowRateTrucks()) == 0)
                 addVehicle('W', new Vehicle('t', time));
 
+            if (santa)
+            {
+                if (northbound.size() > 0)
+                {
+                    if (!truckWait1 && northbound.peek().getType() == 'c')
+                    {
+                        results.add(new ResultVehicle(northbound.peek().getType(), northbound.peek().getTimeEntered(), time));
+                        northbound.remove();
+                    }
+                    else if (!truckWait1 && northbound.peek().getType() == 't')
+                    {
+                        truckWait1 = true;
+                    }
+                    if (truckWait1)
+                    {
+                        results.add(new ResultVehicle(northbound.peek().getType(), northbound.peek().getTimeEntered(), time));
+                        northbound.remove();
+                    }
+                }
+
+                if (southbound.size() > 0)
+                {
+                    if (!truckWait2 && southbound.peek().getType() == 'c')
+                    {
+                        results.add(new ResultVehicle(southbound.peek().getType(), southbound.peek().getTimeEntered(), time));
+                        southbound.remove();
+                    }
+                    else if (!truckWait2 && southbound.peek().getType() == 't')
+                    {
+                        truckWait2 = true;
+                    }
+                    if (truckWait2)
+                    {
+                        results.add(new ResultVehicle(southbound.peek().getType(), southbound.peek().getTimeEntered(), time));
+                        southbound.remove();
+                    }
+                }
+            }
+
+            if (!santa)
+            {
+                if (eastbound.size() > 0)
+                {
+                    if (!truckWait1 && eastbound.peek().getType() == 'c')
+                    {
+                        results.add(new ResultVehicle(eastbound.peek().getType(), eastbound.peek().getTimeEntered(), time));
+                        eastbound.remove();
+                    }
+                    else if (!truckWait1 && eastbound.peek().getType() == 't')
+                    {
+                        truckWait1 = true;
+                    }
+                    if (truckWait1)
+                    {
+                        results.add(new ResultVehicle(eastbound.peek().getType(), eastbound.peek().getTimeEntered(), time));
+                        eastbound.remove();
+                    }
+                }
+
+                if (westbound.size() > 0)
+                {
+                    if (!truckWait2 && westbound.peek().getType() == 'c')
+                    {
+                        results.add(new ResultVehicle(westbound.peek().getType(), westbound.peek().getTimeEntered(), time));
+                        westbound.remove();
+                    }
+                    else if (!truckWait2 && westbound.peek().getType() == 't')
+                    {
+                        truckWait2 = true;
+                    }
+                    if (truckWait2)
+                    {
+                        results.add(new ResultVehicle(westbound.peek().getType(), westbound.peek().getTimeEntered(), time));
+                        westbound.remove();
+                    }
+                }
+            }
             printBoard();
             time++;
         }

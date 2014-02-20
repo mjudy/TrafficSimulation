@@ -79,7 +79,7 @@ public class Vehicle
      */
     public String toString()
     {
-        String str = "Type: " + type + " Time: " + timeEntered;
+        String str = "Type: " + type + " Time Entered: " + timeEntered;
         return str;
     }
 }

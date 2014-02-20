@@ -11,13 +11,21 @@ public class LinkedList
     private Node head;
     private int count;
 
+    /**
+     * Default constructor to initialize the LinkedList with a head node, and an empty count of list members.
+     */
     public LinkedList()
     {
         head = new Node(null);
         count = 0;
     }
 
-    public void add (Object data)
+    /**
+     * Adds a new member to the end of the list. Increments the count of members in the list.
+     *
+     * @param data - Object of any type to be added to the linked list.
+     */
+    public void add (ResultVehicle data)
     {
         Node temp = new Node(data);
         Node current = head;
@@ -31,7 +39,13 @@ public class LinkedList
         count++;
     }
 
-    public void add (Object data, int index)
+    /**
+     * Adds a new member to the list at the given index. Increments the count of members in the list.
+     *
+     * @param data - Object of any type to be added to the linked list.
+     * @param index - integer specifying where in the list to add the object.
+     */
+    public void add (ResultVehicle data, int index)
     {
         Node temp = new Node(data);
         Node current = head;
@@ -46,7 +60,13 @@ public class LinkedList
         count++;
     }
 
-    public Object get (int index)
+    /**
+     * Returns the object stored at a given index in the list.
+     *
+     * @param index - integer specifying what object in the list to get the data from.
+     * @return - returns
+     */
+    public ResultVehicle get (int index)
     {
         if(index <= 0)
         {
@@ -109,26 +129,26 @@ public class LinkedList
     private class Node
     {
         Node next;
-        Object data;
+        ResultVehicle data;
 
-        public Node (Object newData)
+        public Node (ResultVehicle newData)
         {
             next = null;
             data = newData;
         }
 
-        public Node (Object newData, Node nextNode)
+        public Node (ResultVehicle newData, Node nextNode)
         {
             next = nextNode;
             data = newData;
         }
 
-        public Object getData ()
+        public ResultVehicle getData ()
         {
             return data;
         }
 
-        public void setData (Object newData)
+        public void setData (ResultVehicle newData)
         {
             data = newData;
         }
