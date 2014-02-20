@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3990bfb8-3f11-4779-b118-b1e51c1241bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/TrafficSim.java" afterPath="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrafficSimulation.iws" />
@@ -11,7 +10,7 @@
     <file path="/TrafficSim.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392924236285" ignored="false" />
     <file path="/Driver.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392792139738" ignored="false" />
     <file path="/Vehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392861203010" ignored="false" />
-    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392924151299" ignored="false" />
+    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392924612805" ignored="false" />
     <file path="/ResultVehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392870201636" ignored="false" />
     <file path="/LinkedList.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392871811390" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -388,7 +387,11 @@
       <created>1392872997870</created>
       <updated>1392872997870</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed the off by one. TODO: Format printBoard and results.">
+      <created>1392924617827</created>
+      <updated>1392924617827</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -409,7 +412,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6925996" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30740038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30740038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -459,7 +462,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Off by one in the final loop. Ugh." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed the off by one. TODO: Format printBoard and results." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -478,6 +481,7 @@
     <MESSAGE value="Progress! We got vehicles out of queues and SANTA HAS PANTS!" />
     <MESSAGE value="Changed santa's pants." />
     <MESSAGE value="Off by one in the final loop. Ugh." />
+    <MESSAGE value="Fixed the off by one. TODO: Format printBoard and results." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
