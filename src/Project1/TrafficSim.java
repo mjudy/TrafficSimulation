@@ -39,8 +39,8 @@ public class TrafficSim
 
         readFromFile(filename);
         simulation();
-
-        System.out.println(results.toString());
+        System.out.println(printResults());
+        //System.out.println(results.toString());
     }
 
     /**
@@ -163,76 +163,76 @@ public class TrafficSim
             case 1:
                 for (i = 1; i < 6; i++)
                     str += " ";
-                str += "x" +  eastbound.peek().getType();
+                str += eastbound.peek().getType();
                 break;
             case 2:
                 for (i = 2; i < 6; i++)
                     str += " ";
-                for (i = 0; i < 2; i++)
+                for (i = 1; i < 2; i++)
                     str += "x";
                 str += eastbound.peek().getType();
                 break;
             case 3:
                 for (i = 3; i < 6; i++)
                     str += " ";
-                for (i = 0; i < 3; i++)
+                for (i = 1; i < 3; i++)
                     str += "x";
                 str += eastbound.peek().getType();
                 break;
             case 4:
                 for ( i = 4; i < 6; i++)
                     str += " ";
-                for (i = 0; i < 4; i++)
+                for (i = 1; i < 4; i++)
                     str += "x";
                 str += eastbound.peek().getType();
                 break;
             case 5:
                 str += " ";
-                for (i = 0; i < 5; i++)
+                for (i = 1; i < 5; i++)
                     str += "x";
                 str += eastbound.peek().getType();
                 break;
             default:
             case 6:
-                for (i = 0; i < 6; i++)
+                for (i = 1; i < 6; i++)
                     str += "x";
                 str += eastbound.peek().getType();
         }
 
-        str += " ";
+        str += "   ";
 
         switch (westbound.size())
         {
             case 0:
                 break;
             case 1:
-                str += westbound.peek().getType() + "x";
+                str += westbound.peek().getType();
                 break;
             case 2:
                 str += westbound.peek().getType();
-                for (i = 0; i < 2; i++)
+                for (i = 1; i < 2; i++)
                     str += "x";
                 break;
             case 3:
                 str += westbound.peek().getType();
-                for (i = 0; i < 3; i++)
+                for (i = 1; i < 3; i++)
                     str += "x";
                 break;
             case 4:
                 str += westbound.peek().getType();
-                for (i = 0; i < 4; i++)
+                for (i = 1; i < 4; i++)
                     str += "x";
                 break;
             case 5:
                 str += westbound.peek().getType();
-                for (i = 0; i < 5; i++)
+                for (i = 1; i < 5; i++)
                     str += "x";
                 str += " ";
                 break;
             default:
             case 6:
                 str += westbound.peek().getType();
-                for (i = 0; i < 6; i++)
+                for (i = 1; i < 6; i++)
                     str += "x";
         }
 
@@ -288,6 +288,38 @@ public class TrafficSim
     }
 
     /**
+     * Empties the results list to find how many vehicles, and of what type, went through the intersection and calculates
+     * average wait times for each vehicle.
+     */
+    private String printResults()
+    {
+        int count = 0, carCount = 0, truckCount = 0;
+        double waitTime, avgWait = 0;
+        String str;
+
+        while(results.size() > 0)
+        {
+            if (results.getFirst().getType() == 'c')
+                carCount++;
+            else
+                truckCount++;
+            count++;
+
+            waitTime = results.getFirst().getTimeExited() - results.getFirst().getTimeEntered();
+            avgWait += waitTime;
+            results.removeFirst();
+        }
+
+        avgWait /= count;
+
+        str = "The final results are:\n" + "The number of vehicles that passed through the intersection is: " +
+            count + "\n" + "The number of cars that passed through the intersection is: " + carCount + "\n" +
+            "The number of trucks that passed through the intersection is: " + truckCount + "\n" +
+            "The average wait time for this intersection is: " + avgWait;
+        return str;
+    }
+
+    /**
      * //TODO Add moar comments.
      * Runs the traffic simulation.
      */
@@ -307,38 +339,15 @@ public class TrafficSim
             eastbound.add(new Vehicle ('c', time));
             westbound.add(new Vehicle ('c', time));
         }
+        printBoard();
+        System.out.println("N/S Light Green. Time: " + time + "\n----------------------------------------------------------\n");
 
-        while (time <= 120)
+        while (time < 120)
         {
-            printBoard();
-            if (santa)
-                str = "N/S Light Green. Time: " + time;
-            else
-                str = "E/W Light Green, Time: " + time;
-            System.out.println(str + "\n\n");
             time++;
             priorityTime++;
 
-            if(santa && priorityTime > 30 && (westbound.size() > 0 || eastbound.size() > 0))
-            {
-                santa = false;
-                priorityTime = 0;
-                System.out.println("E/W Light Changed!");
-            }
-            else if(!santa && priorityTime > 10 && (eastbound.size() ==  0 && southbound.size() == 0))
-            {
-                santa = true;
-                priorityTime = 0;
-                System.out.println("N/S Light Changed!");
-            }
-            else if(!santa && priorityTime > 30)
-            {
-                santa = true;
-                priorityTime = 0;
-                System.out.println("N/S Light Changed!");
-            }
-
-            if (time < 120)
+            //if (time < 120)
             {
                 if (santa)
                 {
@@ -440,6 +449,32 @@ public class TrafficSim
                 addVehicle('W', new Vehicle('c', time));
             if((time % flowRate.getWestFlowRateTrucks()) == 0)
                 addVehicle('W', new Vehicle('t', time));
+
+            if(santa && priorityTime > 30 && (westbound.size() > 0 || eastbound.size() > 0))
+            {
+                santa = false;
+                priorityTime = 0;
+                System.out.println("E/W Light Changed!");
+            }
+            else if(!santa && priorityTime > 10 && (eastbound.size() ==  0 && westbound.size() == 0))
+            {
+                santa = true;
+                priorityTime = 0;
+                System.out.println("N/S Light Changed!");
+            }
+            else if(!santa && priorityTime > 30)
+            {
+                santa = true;
+                priorityTime = 0;
+                System.out.println("N/S Light Changed!");
+            }
+
+            printBoard();
+            if (santa)
+                str = "N/S Light Green. Time: " + time;
+            else
+                str = "E/W Light Green, Time: " + time;
+            System.out.println(str + "\n----------------------------------------------------------\n");
         }
     }
 

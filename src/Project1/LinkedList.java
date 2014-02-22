@@ -87,6 +87,11 @@ public class LinkedList<E>
         return current.getData();
     }
 
+    public E getFirst()
+    {
+        return head.getNext().getData();
+    }
+
     public boolean remove (int index)
     {
         if (index < 1 || index > size())
@@ -105,6 +110,18 @@ public class LinkedList<E>
             current = current.getNext();
         }
         current.setNext(current.getNext().getNext());
+        count--;
+        return true;
+    }
+
+    public boolean removeFirst()
+    {
+        if (head.getNext() == null)
+            return false;
+        else
+        {
+            head.next = head.next.next;
+        }
         count--;
         return true;
     }
