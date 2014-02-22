@@ -10,6 +10,6 @@ public class Driver
 {
     public static void main(String[] args)
     {
-        TrafficSim x = new TrafficSim("input2.txt");
+        TrafficSim x = new TrafficSim("input1.txt");
     }
 }

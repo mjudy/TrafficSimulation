@@ -105,26 +105,186 @@ public class TrafficSim
      */
     private void printBoard()
     {
-        System.out.println("Northbound:");
-        for(Vehicle x : northbound)
+        int i;
+        String str = "";
+
+        System.out.printf("%4s%6d\n", "SB", southbound.size());
+        switch(southbound.size())
         {
-            System.out.println(x.toString());
+            case 0:
+                for (i = 0; i < 6; i++)
+                    System.out.println();
+                break;
+            case 1:
+                for(i = 1; i < 6; i++)
+                    System.out.println();
+                System.out.printf("%8c\n",southbound.peek().getType());
+                break;
+            case 2:
+                for(i = 2; i < 6; i++)
+                    System.out.println();
+                System.out.printf("%8c\n", 'x');
+                System.out.printf("%8c\n", southbound.peek().getType());
+                break;
+            case 3:
+                for(i = 3; i < 6; i++)
+                    System.out.println();
+                for(i = 0; i < 2; i++)
+                    System.out.printf("%8c\n", 'x');
+                System.out.printf("%8c\n", southbound.peek().getType());
+                break;
+            case 4:
+                for(i = 4; i < 6; i++)
+                    System.out.println();
+                for(i = 0; i < 3; i++)
+                    System.out.printf("%8c\n", 'x');
+                System.out.printf("%8c\n", southbound.peek().getType());
+                break;
+            case 5:
+                System.out.println();
+                for(i = 0; i < 4; i++)
+                    System.out.printf("%8c\n", 'x');
+                System.out.printf("%8c\n", southbound.peek().getType());
+                break;
+                default:
+            case 6:
+                for(i = 0; i < 5; i++)
+                    System.out.printf("%8c\n", 'x');
+                System.out.printf("%8c\n", southbound.peek().getType());
+                break;
         }
-        System.out.println("Southbound:");
-        for (Vehicle x : southbound)
+
+        switch (eastbound.size())
         {
-            System.out.println(x.toString());
+            case 0:
+                for(i = 0; i < 6; i++)
+                    str += " ";
+                break;
+            case 1:
+                for (i = 1; i < 6; i++)
+                    str += " ";
+                str += "x" +  eastbound.peek().getType();
+                break;
+            case 2:
+                for (i = 2; i < 6; i++)
+                    str += " ";
+                for (i = 0; i < 2; i++)
+                    str += "x";
+                str += eastbound.peek().getType();
+                break;
+            case 3:
+                for (i = 3; i < 6; i++)
+                    str += " ";
+                for (i = 0; i < 3; i++)
+                    str += "x";
+                str += eastbound.peek().getType();
+                break;
+            case 4:
+                for ( i = 4; i < 6; i++)
+                    str += " ";
+                for (i = 0; i < 4; i++)
+                    str += "x";
+                str += eastbound.peek().getType();
+                break;
+            case 5:
+                str += " ";
+                for (i = 0; i < 5; i++)
+                    str += "x";
+                str += eastbound.peek().getType();
+                break;
+            default:
+            case 6:
+                for (i = 0; i < 6; i++)
+                    str += "x";
+                str += eastbound.peek().getType();
         }
-        System.out.println("Eastbound:");
-        for (Vehicle x : eastbound)
+
+        str += " ";
+
+        switch (westbound.size())
         {
-            System.out.println(x.toString());
+            case 0:
+                break;
+            case 1:
+                str += westbound.peek().getType() + "x";
+                break;
+            case 2:
+                str += westbound.peek().getType();
+                for (i = 0; i < 2; i++)
+                    str += "x";
+                break;
+            case 3:
+                str += westbound.peek().getType();
+                for (i = 0; i < 3; i++)
+                    str += "x";
+                break;
+            case 4:
+                str += westbound.peek().getType();
+                for (i = 0; i < 4; i++)
+                    str += "x";
+                break;
+            case 5:
+                str += westbound.peek().getType();
+                for (i = 0; i < 5; i++)
+                    str += "x";
+                str += " ";
+                break;
+            default:
+            case 6:
+                str += westbound.peek().getType();
+                for (i = 0; i < 6; i++)
+                    str += "x";
         }
-        System.out.println("Westbound:");
-        for (Vehicle x : westbound)
+
+        System.out.println("EB: " + eastbound.size());
+        System.out.println(str);
+        System.out.println("\t\t\tWB: " + westbound.size());
+
+        switch(northbound.size())
         {
-            System.out.println(x.toString());
+            case 0:
+                for (i = 0; i < 6; i++)
+                    System.out.println();
+                break;
+            case 1:
+                System.out.printf("%8c\n",northbound.peek().getType());
+                for(i = 1; i < 6; i++)
+                    System.out.println();
+                break;
+            case 2:
+                System.out.printf("%8c\n", northbound.peek().getType());
+                System.out.printf("%8c\n", 'x');
+                for(i = 2; i < 6; i++)
+                    System.out.println();
+                break;
+            case 3:
+                System.out.printf("%8c\n", northbound.peek().getType());
+                for(i = 0; i < 2; i++)
+                    System.out.printf("%8c\n", 'x');
+                for(i = 3; i < 6; i++)
+                    System.out.println();
+                break;
+            case 4:
+                System.out.printf("%8c\n", northbound.peek().getType());
+                for(i = 0; i < 3; i++)
+                    System.out.printf("%8c\n", 'x');
+                for(i = 4; i < 6; i++)
+                    System.out.println();
+                break;
+            case 5:
+                System.out.printf("%8c\n", northbound.peek().getType());
+                for(i = 0; i < 4; i++)
+                    System.out.printf("%8c\n", 'x');
+                System.out.println();
+                break;
+            default:
+            case 6:
+                System.out.printf("%8c\n", northbound.peek().getType());
+                for(i = 0; i < 5; i++)
+                    System.out.printf("%8c\n", 'x');
+                break;
         }
+        System.out.printf("%4s%6d\n", "NB", northbound.size());
     }
 
     /**
@@ -135,9 +295,9 @@ public class TrafficSim
     {
         int time = 0;
         int priorityTime = 0;
+        String str;
         boolean santa = true; //traffic light. true means that cars can travel northbound to visit santa.
-        boolean truckWait1 = false;
-        boolean truckWait2 = false;
+        int truckWait1 = 2, truckWait2 = 2;
 
         //initialize intersection with 2 cars in each direction
         for(int i = 0; i < 2; i++)
@@ -148,18 +308,121 @@ public class TrafficSim
             westbound.add(new Vehicle ('c', time));
         }
 
-        //increment time counters for starting vehicles
-        time++;
-        priorityTime++;
-        printBoard();
-        String str;
-        if (santa)
-            str = "N/S Light Green. Time: " + time;
-        else
-            str = "E/W Light Green, Time: " + time;
-
         while (time <= 120)
         {
+            printBoard();
+            if (santa)
+                str = "N/S Light Green. Time: " + time;
+            else
+                str = "E/W Light Green, Time: " + time;
+            System.out.println(str + "\n\n");
+            time++;
+            priorityTime++;
+
+            if(santa && priorityTime > 30 && (westbound.size() > 0 || eastbound.size() > 0))
+            {
+                santa = false;
+                priorityTime = 0;
+                System.out.println("E/W Light Changed!");
+            }
+            else if(!santa && priorityTime > 10 && (eastbound.size() ==  0 && southbound.size() == 0))
+            {
+                santa = true;
+                priorityTime = 0;
+                System.out.println("N/S Light Changed!");
+            }
+            else if(!santa && priorityTime > 30)
+            {
+                santa = true;
+                priorityTime = 0;
+                System.out.println("N/S Light Changed!");
+            }
+
+            if (time < 120)
+            {
+                if (santa)
+                {
+                    if (northbound.size() > 0)
+                    {
+                        if (northbound.peek().getType() == 'c')
+                        {
+                            results.add(new ResultVehicle(northbound.peek().getType(), northbound.peek().getTimeEntered(), time));
+                            northbound.remove();
+                        }
+                        else if (truckWait1 > 0  && northbound.peek().getType() == 't')
+                        {
+                            truckWait1--;
+                        }
+                        if (truckWait1 == 0)
+                        {
+                            results.add(new ResultVehicle(northbound.peek().getType(), northbound.peek().getTimeEntered(), time));
+                            truckWait1 = 2;
+                            northbound.remove();
+                        }
+                    }
+
+                    if (southbound.size() > 0)
+                    {
+                        if (southbound.peek().getType() == 'c')
+                        {
+                            results.add(new ResultVehicle(southbound.peek().getType(), southbound.peek().getTimeEntered(), time));
+                            southbound.remove();
+                        }
+                        else if (truckWait2 > 0  && southbound.peek().getType() == 't')
+                        {
+                            truckWait2--;
+                        }
+                        if (truckWait2 == 0)
+                        {
+                            results.add(new ResultVehicle(southbound.peek().getType(), southbound.peek().getTimeEntered(), time));
+                            truckWait2 = 2;
+                            southbound.remove();
+                        }
+                    }
+                }
+
+                if (!santa)
+                {
+                    if (eastbound.size() > 0)
+                    {
+                        if (eastbound.peek().getType() == 'c')
+                        {
+                            results.add(new ResultVehicle(eastbound.peek().getType(), eastbound.peek().getTimeEntered(), time));
+                            eastbound.remove();
+                        }
+                        else if (truckWait1 > 0  && eastbound.peek().getType() == 't')
+                        {
+                            truckWait1--;
+                        }
+                        if (truckWait1 == 0)
+                        {
+                            results.add(new ResultVehicle(eastbound.peek().getType(), eastbound.peek().getTimeEntered(), time));
+                            truckWait1 = 2;
+                            eastbound.remove();
+                        }
+                    }
+
+                    if (westbound.size() > 0)
+                    {
+                        if (westbound.peek().getType() == 'c')
+                        {
+                            results.add(new ResultVehicle(westbound.peek().getType(), westbound.peek().getTimeEntered(), time));
+                            westbound.remove();
+                        }
+                        else if (truckWait2 > 0 && westbound.peek().getType() == 't')
+                        {
+                            truckWait2--;
+                        }
+                        if (truckWait2 == 0)
+                        {
+                            results.add(new ResultVehicle(westbound.peek().getType(), westbound.peek().getTimeEntered(), time));
+                            truckWait2 = 2;
+                            westbound.remove();
+                        }
+                    }
+                }
+            }
+
             //add cars and trucks to their queues based on their flow rate
             if((time % flowRate.getNorthFlowRateCars()) == 0)
                 addVehicle('N', new Vehicle('c', time));
@@ -177,117 +440,6 @@ public class TrafficSim
                 addVehicle('W', new Vehicle('c', time));
             if((time % flowRate.getWestFlowRateTrucks()) == 0)
                 addVehicle('W', new Vehicle('t', time));
-
-            if (time < 120)
-            {
-                if (santa)
-                {
-                    if (northbound.size() > 0)
-                    {
-                        if (!truckWait1 && northbound.peek().getType() == 'c')
-                        {
-                            results.add(new ResultVehicle(northbound.peek().getType(), northbound.peek().getTimeEntered(), time));
-                            northbound.remove();
-                        }
-                        else if (!truckWait1 && northbound.peek().getType() == 't')
-                        {
-                            truckWait1 = true;
-                        }
-                        if (truckWait1)
-                        {
-                            results.add(new ResultVehicle(northbound.peek().getType(), northbound.peek().getTimeEntered(), time));
-                            truckWait1 = false;
-                            northbound.remove();
-                        }
-                    }
-
-                    if (southbound.size() > 0)
-                    {
-                        if (!truckWait2 && southbound.peek().getType() == 'c')
-                        {
-                            results.add(new ResultVehicle(southbound.peek().getType(), southbound.peek().getTimeEntered(), time));
-                            southbound.remove();
-                        }
-                        else if (!truckWait2 && southbound.peek().getType() == 't')
-                        {
-                            truckWait2 = true;
-                        }
-                        if (truckWait2)
-                        {
-                            results.add(new ResultVehicle(southbound.peek().getType(), southbound.peek().getTimeEntered(), time));
-                            truckWait2 = false;
-                            southbound.remove();
-                        }
-                    }
-                }
-
-                if (!santa)
-                {
-                    if (eastbound.size() > 0)
-                    {
-                        if (!truckWait1 && eastbound.peek().getType() == 'c')
-                        {
-                            results.add(new ResultVehicle(eastbound.peek().getType(), eastbound.peek().getTimeEntered(), time));
-                            eastbound.remove();
-                        }
-                        else if (!truckWait1 && eastbound.peek().getType() == 't')
-                        {
-                            truckWait1 = true;
-                        }
-                        if (truckWait1)
-                        {
-                            results.add(new ResultVehicle(eastbound.peek().getType(), eastbound.peek().getTimeEntered(), time));
-                            truckWait1 = false;
-                            eastbound.remove();
-                        }
-                    }
-
-                    if (westbound.size() > 0)
-                    {
-                        if (!truckWait2 && westbound.peek().getType() == 'c')
-                        {
-                            results.add(new ResultVehicle(westbound.peek().getType(), westbound.peek().getTimeEntered(), time));
-                            westbound.remove();
-                        }
-                        else if (!truckWait2 && westbound.peek().getType() == 't')
-                        {
-                            truckWait2 = true;
-                        }
-                        if (truckWait2)
-                        {
-                            results.add(new ResultVehicle(westbound.peek().getType(), westbound.peek().getTimeEntered(), time));
-                            truckWait2 = false;
-                            westbound.remove();
-                        }
-                    }
-                }
-            }
-
-
-            if(santa && priorityTime >= 30 && (westbound.size() > 0 || eastbound.size() > 0))
-            {
-                santa = false;
-                priorityTime = 0;
-            }
-            else if(!santa && priorityTime > 10 && (eastbound.size() ==  0 && southbound.size() == 0))
-            {
-                santa = true;
-                priorityTime = 0;
-            }
-            else if(!santa && priorityTime >= 30)
-            {
-                santa = true;
-                priorityTime = 0;
-            }
-
-            printBoard();
-            if (santa)
-                str = "N/S Light Green. Time: " + time;
-            else
-                str = "E/W Light Green, Time: " + time;
-            System.out.println(str + "\n\n");
-            time++;
-            priorityTime++;
         }
     }
 
