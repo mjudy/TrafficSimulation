@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3990bfb8-3f11-4779-b118-b1e51c1241bf" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/Driver.java" afterPath="$PROJECT_DIR$/src/driver/Driver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/TrafficSim.java" afterPath="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -11,7 +12,7 @@
     <file path="/TrafficSim.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393111231433" ignored="false" />
     <file path="/Driver.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392792139738" ignored="false" />
     <file path="/Vehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392861203010" ignored="false" />
-    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393108523922" ignored="false" />
+    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393113048661" ignored="false" />
     <file path="/ResultVehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392870201636" ignored="false" />
     <file path="/LinkedList.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393106801194" ignored="false" />
     <file path="/input4.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393016304491" ignored="false" />
@@ -87,7 +88,7 @@
       <file leaf-file-name="TrafficSim.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="503" column="56" selection-start="17781" selection-end="17781" vertical-scroll-proportion="2.8208375">
+            <state line="364" column="80" selection-start="12019" selection-end="12019" vertical-scroll-proportion="-1.65">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,7 +135,7 @@
       <file leaf-file-name="LinkedList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project1/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="20" selection-start="2800" selection-end="2800" vertical-scroll-proportion="0.0">
+            <state line="76" column="92" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -173,8 +174,8 @@
         <option value="$PROJECT_DIR$/src/Project1/ResultVehicle.java" />
         <option value="$PROJECT_DIR$/input4.txt" />
         <option value="$PROJECT_DIR$/src/Project1/LinkedList.java" />
-        <option value="$PROJECT_DIR$/src/driver/Driver.java" />
         <option value="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
+        <option value="$PROJECT_DIR$/src/driver/Driver.java" />
       </list>
     </option>
   </component>
@@ -423,7 +424,11 @@
       <created>1393108528494</created>
       <updated>1393108528494</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="ALMOST EVERYTHING WORKS. NEED COMMENTS.">
+      <created>1393111936049</created>
+      <updated>1393111936049</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -438,13 +443,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32922202" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.670778" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.5104364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="2857" y="16" width="882" height="1126" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.5104364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="2857" y="16" width="882" height="1126" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -494,7 +499,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Results print properly. LinkedList now gets/removes first." />
+    <option name="LAST_COMMIT_MESSAGE" value="uuuughhhhh. needs moar comments." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -518,6 +523,8 @@
     <MESSAGE value="Fixed a small error." />
     <MESSAGE value="Intersection output completed!" />
     <MESSAGE value="Results print properly. LinkedList now gets/removes first." />
+    <MESSAGE value="ALMOST EVERYTHING WORKS. NEED COMMENTS." />
+    <MESSAGE value="uuuughhhhh. needs moar comments." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -622,7 +629,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="20" selection-start="2800" selection-end="2800" vertical-scroll-proportion="0.0">
+        <state line="76" column="92" selection-start="1843" selection-end="1843" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -636,7 +643,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="503" column="56" selection-start="17781" selection-end="17781" vertical-scroll-proportion="2.8208375">
+        <state line="364" column="80" selection-start="12019" selection-end="12019" vertical-scroll-proportion="-1.65">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
