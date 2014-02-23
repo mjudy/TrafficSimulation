@@ -19,7 +19,7 @@ public class ResultVehicle
         type ='z';
         timeEntered = -1;
         timeExited = -1;
-    }
+    }//end ResultVehicle()
 
     /**
      * Constructor that initializes type to newType and timeEntered to time.
@@ -33,7 +33,7 @@ public class ResultVehicle
         type = newType;
         timeEntered = time;
         timeExited = exit;
-    }
+    }//end ResultVehicle (char, int, int)
 
     /**
      * Retrieves the type of ResultVehicle object this is. 'c' for car, 't' for truck.
@@ -43,7 +43,7 @@ public class ResultVehicle
     public char getType()
     {
         return type;
-    }
+    }//end getType()
 
     /**
      * Changes the type of ResultVehicle object this is.
@@ -53,7 +53,7 @@ public class ResultVehicle
     public void setType(char type)
     {
         this.type = type;
-    }
+    }//end getType(char)
 
     /**
      * Retrieves the time that this ResultVehicle entered the intersection in the traffic simulation.
@@ -63,7 +63,7 @@ public class ResultVehicle
     public int getTimeEntered()
     {
         return timeEntered;
-    }
+    }//end GetTimeEntered()
 
     /**
      * Changes the time that this ResultVehicle entered the intersection.
@@ -73,7 +73,7 @@ public class ResultVehicle
     public void setTimeEntered(int timeEntered)
     {
         this.timeEntered = timeEntered;
-    }
+    }//end setTimeEntered(int)
 
     /**
      * Returns the time this ResultVehicle exited the intersection.
@@ -83,7 +83,7 @@ public class ResultVehicle
     public int getTimeExited()
     {
         return timeExited;
-    }
+    }//end getTimeExited()
 
     /**
      * Sets the time that this ResultVehicle exited the intersection.
@@ -93,7 +93,7 @@ public class ResultVehicle
     public void setTimeExited(int timeExited)
     {
         this.timeExited = timeExited;
-    }
+    }//end setTimeExited(int)
 
     /**
      * Prepares the data contained in this ResultVehicle object for printing by creating a string containing the data.
@@ -104,5 +104,5 @@ public class ResultVehicle
     {
         String str = "Type: " + type + " Time Entered: " + timeEntered + " Time Exited: " + timeExited;
         return str;
-    }
-}
+    }//end toString()
+}//end ResultVehicle class

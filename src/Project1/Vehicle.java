@@ -18,7 +18,7 @@ public class Vehicle
     {
         type ='z';
         timeEntered = -1;
-    }
+    }//end Vehicle()
 
     /**
      * Constructor that initializes type to newType and timeEntered to time.
@@ -30,7 +30,7 @@ public class Vehicle
     {
         type = newType;
         timeEntered = time;
-    }
+    }//end Vehicle(char, int)
 
     /**
      * Retrieves the type of Vehicle object this is. 'c' for car, 't' for truck.
@@ -40,7 +40,7 @@ public class Vehicle
     public char getType()
     {
         return type;
-    }
+    }//end getType()
 
     /**
      * Changes the type of Vehicle object this is.
@@ -50,7 +50,7 @@ public class Vehicle
     public void setType(char type)
     {
         this.type = type;
-    }
+    }//end setType(char)
 
     /**
      * Retrieves the time that this Vehicle entered the intersection in the traffic simulation.
@@ -60,7 +60,7 @@ public class Vehicle
     public int getTimeEntered()
     {
         return timeEntered;
-    }
+    }//end getTimeEntered()
 
     /**
      * Changes the time that this Vehicle entered the intersection.
@@ -70,7 +70,7 @@ public class Vehicle
     public void setTimeEntered(int timeEntered)
     {
         this.timeEntered = timeEntered;
-    }
+    }//end setTimeEntered(int)
 
     /**
      * Prepares the data contained in this Vehicle object for printing by creating a string containing the data.
@@ -81,5 +81,5 @@ public class Vehicle
     {
         String str = "Type: " + type + " Time Entered: " + timeEntered;
         return str;
-    }
-}
+    }//end toString()
+}//end Vehicle class

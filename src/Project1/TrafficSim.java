@@ -40,8 +40,7 @@ public class TrafficSim
         readFromFile(filename);
         simulation();
         System.out.println(printResults());
-        //System.out.println(results.toString());
-    }
+    }//end TrafficSim (String)
 
     /**
      * Reads the input data from a file specified by the filename parameter then sets the
@@ -98,7 +97,7 @@ public class TrafficSim
             return false;
         }
         return true;
-    }
+    }//end readFromFile(String)
 
     /**
      * Prints the state of the intersection during the traffic simulation.
@@ -285,33 +284,19 @@ public class TrafficSim
                 break;
         }
         System.out.printf("%4s%6d\n", "NB", northbound.size());
-    }
+    }//end printBoard()
 
     /**
      * Empties the results list to find how many vehicles, and of what type, went through the intersection and calculates
      * average wait times for each vehicle.
+     *
+     * @return - returns results string
      */
     private String printResults()
     {
         int count = 0, carCount = 0, truckCount = 0;
         double waitTime, avgWait = 0;
         String str;
-
-        /*while(results.size() > 0)
-        {
-            if (results.getFirst().getType() == 'c')
-                carCount++;
-            else
-                truckCount++;
-
-            waitTime = results.getFirst().getTimeExited() - results.getFirst().getTimeEntered();
-            avgWait += waitTime;
-
-            results.removeFirst();
-            count++;
-        }
-
-        avgWait /= count;*/
 
         for (int i = 1; i <= results.size(); i++)
         {
@@ -332,11 +317,10 @@ public class TrafficSim
             "The number of trucks that passed through the intersection is: " + truckCount + "\n" +
             "The average wait time for this intersection is: " + avgWait;
         return str;
-    }
+    }//end printResults()
 
     /**
-     * //TODO Add moar comments.
-     * Runs the traffic simulation.
+     * Runs the traffic simulation. Initializes the simulation with 2 cars going each direction in the intersection.
      */
     private void simulation()
     {
@@ -508,7 +492,7 @@ public class TrafficSim
                 System.out.println("N/S Light Changed!");
             }
         }
-    }
+    }//end simulation()
 
     /**
      * Adds vehicles to their designated lanes during the traffic simulation.
@@ -537,5 +521,5 @@ public class TrafficSim
                 return false;
         }
         return true;
-    }
-}
+    }//end addVehicle(char, Vehicle)
+}//end TrafficSim class
