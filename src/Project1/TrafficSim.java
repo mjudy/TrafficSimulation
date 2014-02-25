@@ -473,19 +473,19 @@ public class TrafficSim
                 str = "E/W Light Green, Time: " + time;
             System.out.println(str + "\n----------------------------------------------------------\n");
 
-            if(santa && priorityTime > 30 && (westbound.size() > 0 || eastbound.size() > 0))
+            if(santa && priorityTime >= 30 && (westbound.size() > 0 || eastbound.size() > 0))
             {
                 santa = false;
                 priorityTime = 0;
                 System.out.println("E/W Light Changed!");
             }
-            else if(!santa && priorityTime > 10 && (eastbound.size() ==  0 && westbound.size() == 0))
+            else if(!santa && priorityTime >= 10 && (eastbound.size() ==  0 && westbound.size() == 0))
             {
                 santa = true;
                 priorityTime = 0;
                 System.out.println("N/S Light Changed!");
             }
-            else if(!santa && priorityTime > 30)
+            else if(!santa && priorityTime >= 30)
             {
                 santa = true;
                 priorityTime = 0;

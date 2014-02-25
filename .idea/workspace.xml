@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3990bfb8-3f11-4779-b118-b1e51c1241bf" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/IntersectionFlowRate.java" afterPath="$PROJECT_DIR$/src/Project1/IntersectionFlowRate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/LinkedList.java" afterPath="$PROJECT_DIR$/src/Project1/LinkedList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/ResultVehicle.java" afterPath="$PROJECT_DIR$/src/Project1/ResultVehicle.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/driver/Driver.java" afterPath="$PROJECT_DIR$/src/driver/Driver.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/TrafficSim.java" afterPath="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Project1/Vehicle.java" afterPath="$PROJECT_DIR$/src/Project1/Vehicle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TrafficSimulation.iws" />
@@ -15,7 +12,7 @@
     <file path="/TrafficSim.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393188804684" ignored="false" />
     <file path="/Driver.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1392792139738" ignored="false" />
     <file path="/Vehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393188798898" ignored="false" />
-    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393189955600" ignored="false" />
+    <file path="/Dummy.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393307200450" ignored="false" />
     <file path="/ResultVehicle.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393188779036" ignored="false" />
     <file path="/LinkedList.java" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393189318365" ignored="false" />
     <file path="/input4.txt" changelist="3990bfb8-3f11-4779-b118-b1e51c1241bf" time="1393016304491" ignored="false" />
@@ -34,7 +31,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -71,6 +67,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -80,10 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Driver.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/driver/Driver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="55" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
+            <state line="14" column="85" selection-start="244" selection-end="244" vertical-scroll-proportion="0.42882884">
               <folding />
             </state>
           </provider>
@@ -92,7 +89,7 @@
       <file leaf-file-name="TrafficSim.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="524" column="23" selection-start="18742" selection-end="18742" vertical-scroll-proportion="0.0">
+            <state line="487" column="45" selection-start="17643" selection-end="17643" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,10 +122,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IntersectionFlowRate.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="IntersectionFlowRate.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Project1/IntersectionFlowRate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="188" column="38" selection-start="5208" selection-end="5208" vertical-scroll-proportion="1.3089312">
+            <state line="188" column="38" selection-start="5208" selection-end="5208" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,12 +151,12 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/input4.txt" />
-        <option value="$PROJECT_DIR$/src/driver/Driver.java" />
         <option value="$PROJECT_DIR$/src/Project1/ResultVehicle.java" />
         <option value="$PROJECT_DIR$/src/Project1/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
         <option value="$PROJECT_DIR$/src/Project1/LinkedList.java" />
         <option value="$PROJECT_DIR$/src/Project1/IntersectionFlowRate.java" />
+        <option value="$PROJECT_DIR$/src/Project1/TrafficSim.java" />
+        <option value="$PROJECT_DIR$/src/driver/Driver.java" />
       </list>
     </option>
   </component>
@@ -195,7 +192,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,6 +249,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,12 +264,12 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="dynamic.classpath" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Driver">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -416,7 +413,11 @@
       <created>1393113062910</created>
       <updated>1393113062910</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="COMMENTS! DOCUMENTATION! FINGERS- OW!">
+      <created>1393189971746</created>
+      <updated>1393189971746</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -431,13 +432,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3282876" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282876" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.6717124" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.5104364" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="2857" y="16" width="882" height="1126" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.55218214" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44781783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" x="633" y="77" width="882" height="1126" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922202" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -577,25 +578,14 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/driver/Driver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="55" selection-start="244" selection-end="244" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/input4.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="0.049514562">
-          <folding />
-        </state>
+        <state line="3" column="6" selection-start="27" selection-end="27" vertical-scroll-proportion="0.049514562" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/ResultVehicle.java">
@@ -612,13 +602,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="524" column="23" selection-start="18742" selection-end="18742" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="235" column="80" selection-start="5814" selection-end="5814" vertical-scroll-proportion="0.0">
@@ -628,7 +611,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Project1/IntersectionFlowRate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="188" column="38" selection-start="5208" selection-end="5208" vertical-scroll-proportion="1.3089312">
+        <state line="188" column="38" selection-start="5208" selection-end="5208" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Project1/TrafficSim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="487" column="45" selection-start="17643" selection-end="17643" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/driver/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="85" selection-start="244" selection-end="244" vertical-scroll-proportion="0.42882884">
           <folding />
         </state>
       </provider>
